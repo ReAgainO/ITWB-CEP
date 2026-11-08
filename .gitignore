@@ -1,0 +1,25 @@
+node_modules/
+dist/
+artifacts/
+cache/
+coverage/
+.env
+.env.local
+.env.*.local
+*.log
+
+# Private SSH/deployment material must never enter Git
+*.pem
+*.key
+*-ed25519
+work/
+
+# Generated V2/V3 sample art
+samples/
+samples-v3/
+
+# Deployment manifests written by scripts/deploy.cjs (never commit real addresses)
+deployments/
+
+# Local measurement output
+docs/local-gas-measurements.json
